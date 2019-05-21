@@ -1,3 +1,5 @@
+//// Kolory dla konsoli
+
 // Codes for console colors
 let colors = {
   black: "\x1b[30m",
@@ -33,6 +35,8 @@ function colorCode(color = "white", bgColor = "black") {
   let colorCodes = colors[color] + bgColors[bgColor];
   return colorCodes;
 }
+
+/////////////////////////////////
 
 function Phone(brand, price, color) {
   this.brand = brand;
