@@ -44,19 +44,19 @@ function Phone(brand, price, color) {
   this.color = color;
 }
 
-Phone.prototype.printInfo = function () {
+Phone.prototype.printInfo = function() {
   console.log(
     "Phone brand: " +
-    this.brand +
-    "\n" +
-    "Price: " +
-    this.price +
-    " $\n" +
-    "Color: " +
-    colorCode(this.color) +
-    this.color +
-    colorCode("white", "black") +
-    "\n"
+      this.brand +
+      "\n" +
+      "Price: " +
+      this.price +
+      " $\n" +
+      "Color: " +
+      colorCode(this.color) +
+      this.color +
+      colorCode("white", "black") +
+      "\n"
   );
 };
 
@@ -77,32 +77,32 @@ class UsedPhone extends Phone {
     super(brand, price, color);
     this.serial = serial;
     this.stolen = stolen;
-    this.printSerial = function () {
+    this.printSerial = function() {
       console.log(
         "Serial: " +
-        colorCode(this.color) +
-        this.serial +
-        colorCode("white", "black")
+          colorCode(this.color) +
+          this.serial +
+          colorCode("white", "black")
       );
     };
-    this.printInfo = function () {
+    this.printInfo = function() {
       console.log(
         "Used Phone brand: " +
-        this.brand +
-        "\n" +
-        "Serial: " +
-        colorCode(this.color) +
-        this.serial +
-        "\n" +
-        colorCode("white", "black") +
-        "Price: " +
-        this.price +
-        " $\n" +
-        "Color: " +
-        colorCode(this.color) +
-        this.color +
-        colorCode("white", "black") +
-        "\n"
+          this.brand +
+          "\n" +
+          "Serial: " +
+          colorCode(this.color) +
+          this.serial +
+          "\n" +
+          colorCode("white", "black") +
+          "Price: " +
+          this.price +
+          " $\n" +
+          "Color: " +
+          colorCode(this.color) +
+          this.color +
+          colorCode("white", "black") +
+          "\n"
       );
     };
   }
