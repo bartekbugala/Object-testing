@@ -77,35 +77,35 @@ class UsedPhone extends Phone {
     super(brand, price, color);
     this.serial = serial;
     this.stolen = stolen;
-    this.printSerial = function() {
-      console.log(
-        "Serial: " +
-          colorCode(this.color) +
-          this.serial +
-          colorCode("white", "black")
-      );
-    };
-    this.printInfo = function() {
-      console.log(
-        "Used Phone brand: " +
-          this.brand +
-          "\n" +
-          "Serial: " +
-          colorCode(this.color) +
-          this.serial +
-          "\n" +
-          colorCode("white", "black") +
-          "Price: " +
-          this.price +
-          " $\n" +
-          "Color: " +
-          colorCode(this.color) +
-          this.color +
-          colorCode("white", "black") +
-          "\n"
-      );
-    };
   }
+  printSerial() {
+    console.log(
+      "Serial: " +
+        colorCode(this.color) +
+        this.serial +
+        colorCode("white", "black")
+    );
+  };
+  printInfo() {
+    console.log(
+      "Used Phone brand: " +
+        this.brand +
+        "\n" +
+        "Serial: " +
+        colorCode(this.color) +
+        this.serial +
+        "\n" +
+        colorCode("white", "black") +
+        "Price: " +
+        this.price +
+        " $\n" +
+        "Color: " +
+        colorCode(this.color) +
+        this.color +
+        colorCode("white", "black") +
+        "\n"
+    );
+  };
 }
 
 let oldGalaxyS2 = new UsedPhone(1231231231, "Samsung", 24, "blue", true);
@@ -116,3 +116,4 @@ Nokia3210.printInfo();
 
 Nokia3210.printSerial();
 oldGalaxyS2.printSerial();
+
